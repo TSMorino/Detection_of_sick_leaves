@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # Detection_of_sick_leaves
-病残树叶检测
->>>>>>> 96817c498a3aee06abe36a3f70f2d9c6591e7873
+基于yolov5的病残树叶检测
+实现了web功能，运行一次的时间在五到十秒
