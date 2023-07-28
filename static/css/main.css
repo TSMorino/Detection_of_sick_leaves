@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    width: 25%;
+    height: 700px;
+}
+
+.right {
+    width: 75%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    height: 70px;
+}
+
+.upload {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    text-align: center !important;
+    margin-bottom: 10px;
+    height: 92.5%;
+    border: 1px solid #000;
+}
+
+form{
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    flex-direction: column;
+    width: 241px;
+}
+
+.input-wrapper input[type="file"] {
+    width: 140px;
+}
+
+.image-preview {
+    width: 100%;
+    height: 522px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #000; /* 添加虚线边框 */
+    box-sizing: border-box; /* 确保边框宽度不会增加容器尺寸 */
+}
+
+.image_body {
+    width: 45%; /* 调整图片宽度，使其并排显示 */
+    height: 480px;
+    margin: 10px; /* 设置图片与框体边框的距离 */
+    border: 1px dashed #ccc; /* 添加虚线边框，颜色可以根据需要修改 */
+    padding: 10px; /* 可选：设置内边距来调整虚线与图片之间的距离 */
+    display: flex;
+    justify-content: center;
+}
+
+.preview-img {
+    width: auto; /* 让图片填充整个容器 */
+    height: 100%; /* 自动调整高度，保持图片比例 */
+    display: block; /* 让图片作为可见元素显示 */
+}
+
+.table-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 31.5px;
+    height: 50%; /* 设置高度为75% */
+}
+
+.table-container table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+
+.table-container td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 75%;
+    height: 50px;
+    margin-top: 200px;
+}
+
+.button button {
+    width: 100%; /* 按钮宽度占满容器 */
+    height: 100%; /* 按钮高度占满容器 */
+    background-color: #66ccff;
+}
