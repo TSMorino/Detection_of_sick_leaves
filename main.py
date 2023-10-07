@@ -16,7 +16,6 @@ def index():
 @app.route('/result', methods=['GET', 'POST'])
 def result():
     global img_path_1, img_path_2
-    start_time = time.time()
     # 替换为模型路径，这里只展示一个模型，可以根据需要添加更多模型路径
     models = [r'D:\Work\Comprehensive_Practice\yolov5\yolov5s_未优化.pt',
               r'D:\Work\Comprehensive_Practice\yolov5\yolov5s_优化.pt']
@@ -101,11 +100,6 @@ def result():
             img_path_1 = "../static/image/Not_optimized/result.jpg"
             img_path_2 = "../static/image/Optimized/result.jpg"
 
-    end_time = time.time()
-    run_time = end_time - start_time
-    print('')
-    print(f"程序运行时间：{run_time:.2f}秒")
-    print('')
 
     return render_template('upload.html', img_path_1=img_path_1, img_path_2=img_path_2,
                            variables=zip(model_name, result, num_lines, avg_num))
